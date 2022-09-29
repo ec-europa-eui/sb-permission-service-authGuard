@@ -10,7 +10,6 @@ export const GLOBAL: GlobalConfig = {
         },
         i18nLoader: {
             i18nFolders: ['i18n'],
-            i18nServices: [`${environment.apiBaseUrl}translations?lang=`] 
         },
     },
     user: {

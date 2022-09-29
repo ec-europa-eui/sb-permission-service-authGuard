@@ -16,6 +16,7 @@ import { CachePreventionInterceptor } from '@eui/core';
 import { CorsSecurityInterceptor } from '@eui/core';
 import { AddLangParamInterceptor } from '@eui/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthGuardService } from './services/auth-guard.service';
 
 
 
