@@ -17,6 +17,7 @@ import { CorsSecurityInterceptor } from '@eui/core';
 import { AddLangParamInterceptor } from '@eui/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthGuardService } from './services/auth-guard.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -32,8 +33,10 @@ import { AuthGuardService } from './services/auth-guard.service';
     EuiLabelModule,
     EuiAppModule,
     EuiNotificationsModule,
+    AppRoutingModule
   ],
   providers: [
+    AuthGuardService,
         {
             provide: HTTP_INTERCEPTORS,
             useClass: CachePreventionInterceptor,
